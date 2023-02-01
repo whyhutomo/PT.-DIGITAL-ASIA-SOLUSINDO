@@ -1,6 +1,6 @@
 def main():
     while 1:
-        N = input("Masukkan 4 angka yang dipisahkan dengan spasi: ").split(' ')
+        N = input("Silahkan memasukkan 4 angka yang dipisahkan dengan spasi: ").split(' ')
         if len(N) == 4:
             break
 
@@ -12,7 +12,7 @@ def main():
     number = []
     correct = []
 
-    #Permutation of number
+    #permutasi angka
     for i in range(4):
         for j in range(4):
             if j == i:
@@ -30,7 +30,7 @@ def main():
                     temp = [temp1, temp2, temp3, temp4]
                     number.append(temp)
 
-    #permutation of operator
+    #permutasi operator
     for i in range(4):
         for j in range(4):
             for k in range(4):
@@ -40,7 +40,7 @@ def main():
                 oper_temp = [temp1, temp2, temp3]
                 operator.append(oper_temp)
 
-    #working with bracket (5 conditions)
+    #bracket
     for number_row in number:
         for oper_row in operator:
             result = 0
